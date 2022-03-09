@@ -1,0 +1,64 @@
+@import "./input.scss";
+@import "./button.scss";
+@import "./icon.scss";
+@import "./colors.scss";
+@import "./scrollbar.scss";
+@import "./fontWeight.scss";
+@import "./mixins.scss";
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, Nunito, Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-3);
+  background: var(--color-background-1);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--color-background-2) inset !important;
+}
+
+.cover-fullscreen {
+  @include flex-center-center-column();
+  min-height: calc(100vh - 60px);
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+::-moz-selection {
+  background: rgba(113, 115, 121, 0.39);
+}
+::selection {
+  background: rgba(113, 115, 121, 0.39);
+}

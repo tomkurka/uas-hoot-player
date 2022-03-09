@@ -1,0 +1,22 @@
+@import "./mixins.scss";
+
+.icon-df-color {
+  fill: rgb(40, 42, 46);
+}
+.icon {
+  @include flex-center-center();
+}
+.icon-sm-size {
+  width: 16px;
+  width: 16px;
+}
+.icon-df-size {
+  width: 24px;
+  height: 24px;
+}
+
+.result-icon {
+  width: 220px;
+  margin-bottom: 20px;
+  fill: var(--color-main-2);
+}

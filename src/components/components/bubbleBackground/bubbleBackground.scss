@@ -1,0 +1,30 @@
+.bubble-background {
+  .bubble {
+    position: absolute;
+    z-index: -100;
+    width: 200px;
+    height: 200px;
+    background: var(--color-main-2);
+    box-shadow: var(--box-shadow-medium);
+
+    @media (max-width: 500px) {
+      width: 125px;
+      height: 125px;
+    }
+    @media (max-height: 500px) {
+      width: 125px;
+      height: 125px;
+    }
+
+    &.bubble-top {
+      top: 0;
+      left: 0;
+      border-bottom-right-radius: 100%;
+    }
+    &.bubble-bottom {
+      bottom: 0;
+      right: 0;
+      border-top-left-radius: 100%;
+    }
+  }
+}
